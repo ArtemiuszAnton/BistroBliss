@@ -1,0 +1,92 @@
+/* header {
+
+} */
+
+.up_header {
+    display: flex;
+    background: #474747;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.up_header .contacts {
+    display: flex;
+}
+
+.phone {
+    background-image: url(../../../assets/imgs/phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    margin-right: 6px;
+}
+
+.email {
+    background-image: url(../../../assets/imgs/email.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    margin: 0 6px 0 25px;
+}
+
+.up_header .soc_networks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_block {
+    background: #F9F9F71F;
+    width: 27px;
+    height: 27px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .twitter,
+.fb,
+.ig,
+.github {
+   
+} */
+
+.twitter {
+    background-image: url(../../../assets/imgs/twitter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 9px;
+}
+
+.fb {
+    background-image: url(../../../assets/imgs/facebook.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 12px;
+}
+
+.ig {
+    background-image: url(../../../assets/imgs/inst.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+}
+
+.github {
+    background-image: url(../../../assets/imgs/github.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+}
+
+.down_header {
+    display: flex;
+    justify-content: space-between;
+    
+}
