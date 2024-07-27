@@ -5,9 +5,9 @@ export default function Header() {
         <div className={style.up_header}>
             <div className={style.contacts}>
                 <div className={style.phone}></div>
-                <p>(414) 857 - 0107</p>
-                <div className={style.email}></div>
-                <p>yummy@bistrobliss</p>
+                <p className={style.phone_num}>(414) 857 - 0107</p>
+                <div className={style.email_img}></div>
+                <p className={style.email}>yummy@bistrobliss</p>
             </div>
 
             <div className={style.soc_networks}>
