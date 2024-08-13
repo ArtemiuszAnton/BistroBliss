@@ -1,0 +1,106 @@
+@import '../../../src/assets/mixin/page.scss';
+
+.menu_wrapper {
+    @include flex_function (column, center, flex-start, 85px);
+    width: 1293px;
+    margin: auto;
+}
+
+.menu_title {
+    @include flex_function (column, center, center, 20px);
+    width: 557px;
+    margin: auto;
+
+    h1 {
+        @include text_function (normal, 400, 100px, Playfair Display, #2C2F24, center);
+        margin-top: 97px;
+    }
+
+    p {
+        @include text_function (normal, 400, 18px, DM Sans, #495460, center);
+    }
+}
+
+.container {
+    @include flex_function (row, center, flex-start, 20px);
+    flex-wrap: wrap;
+    margin-bottom: 222px;
+
+    .item {
+        @include border_function (1.5px solid #DBDFD0, #FFFFFF, 12px, 0);
+        width: 306px;
+
+        .img_egg {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/eggs.svg');
+
+        }
+
+        .img_pizza {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/pizza.svg');
+
+        }
+
+
+        .img_cocktail {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/cocktail.svg');
+
+        }
+
+        .img_cake {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/food_cake.svg')
+
+        }
+
+        .img_lemonade {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/lemonade.svg');
+
+        }
+
+        .img_icecream {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/icecream.svg');
+
+        }
+
+        .img_burger {
+            @include img_function (contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/burger.svg');
+
+        }
+
+        .img_waffles {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/waffles.svg');
+
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow:5px 5px 20px 0 #495460
+        }
+    }
+    
+    .text_container {
+        @include flex_function (column, center, center, 15px);
+        margin: 30px;
+        
+        h2 {
+            @include text_function (normal, 700, 20px, DM Sans, #2C2F24, center);
+            
+        }
+        
+        p {
+            @include text_function (normal, 400, 16px, DM Sans, #414536, center);
+        }
+        
+        .price {
+            @include text_function (normal, 700, 20px, DM Sans, #AD343E, center);
+        }
+
+    }
+}

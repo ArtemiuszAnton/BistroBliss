@@ -1,12 +1,14 @@
-import Header from '../components/Header/Header';
+import Header from '../../components/Header/Header';
 import style from './about.module.scss';
 
 export default function About() {
+
     const statisticArr = [
         { number: '3', value: "Locations" },
         { number: '1995', value: "Founded" },
         { number: '65+', value: "Staff Members" },
-        { number: '100%', value: "Satisfied Customers" }];
+        { number: '100%', value: "Satisfied Customers" }
+    ];
 
     return <>
         <Header />
@@ -30,10 +32,10 @@ export default function About() {
                 </div>
 
                 <div className={style.statistic_block}>
-                    {statisticArr.map((elem, index) =>
-                        <div className={style.statistic_item} key={index}>
-                            <h2>{elem.number}</h2>
-                            <p>{elem.value}</p>
+                    {statisticArr.map((el, i) =>
+                        <div className={style.statistic_item} key={i}>
+                            <h2>{el.number}</h2>
+                            <p>{el.value}</p>
                         </div>)}
                 </div>
             </div>
