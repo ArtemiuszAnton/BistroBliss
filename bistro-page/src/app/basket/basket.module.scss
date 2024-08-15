@@ -1,0 +1,101 @@
+@import '../../../src/assets/mixin/page.scss';
+
+.title_basket {
+    @include text_function (normal, 400, 100px, Playfair Display, #2C2F24, center);
+    margin-top: 99px;
+    margin-bottom: 79px;
+}
+
+.container {
+    @include flex_function (row, center, flex-start, 20px);
+    flex-wrap: wrap;
+    margin-bottom: 222px;
+
+    .item {
+        @include border_function (1.5px solid #DBDFD0, #FFFFFF, 12px, 0);
+        width: 306px;
+
+        .img_egg {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/eggs.svg');
+
+        }
+
+        .img_pizza {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/pizza.svg');
+
+        }
+
+
+        .img_cocktail {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/cocktail.svg');
+
+        }
+
+        .img_cake {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/food_cake.svg')
+
+        }
+
+        .img_lemonade {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/lemonade.svg');
+
+        }
+
+        .img_icecream {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/icecream.svg');
+
+        }
+
+        .img_burger {
+            @include img_function (contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/burger.svg');
+
+        }
+
+        .img_waffles {
+            @include img_function ( contain, 306px, 230px, 0, 12px 12px 0 0);
+            background-image: url('../../assets/imgs/waffles.svg');
+
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow:5px 5px 20px 0 #495460
+        }
+    }
+
+    .text_container {
+        @include flex_function (column, center, center, 15px);
+        margin: 30px;
+
+        h2 {
+            @include text_function (normal, 700, 20px, DM Sans, #2C2F24, center);
+
+        }
+
+        p {
+            @include text_function (normal, 400, 16px, DM Sans, #414536, center);
+        }
+
+        .price {
+            @include text_function (normal, 700, 20px, DM Sans, #AD343E, center);
+        }
+
+    }
+    .btn_delete {
+        @include border_function(1px solid #403F3D, #FFFFFF, 100px, 10px 30px);
+        @include text_function (normal, 700, 16px, DM Sans, #403F3D, center);
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #403f3d92;
+
+        }
+    }
+}

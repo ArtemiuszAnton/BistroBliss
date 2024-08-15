@@ -171,14 +171,28 @@
     font-weight: 500;
     line-height: 24px;
     text-align: left;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px #403f3d92;
+
+    }
 }
 
 .right_btn {
-    font-family: DM Sans;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    padding: 12px 24px 12px 24px;
+
+    height: 48px;
+    width: 101px;
+    // padding: 1px 1px 1px 1px;
     border-radius: 118px;
-    border: 1.5px solid #2C2F24
+    border: 1.5px solid #2C2F24;
+
+    .basket_img {
+        margin: 7px 0 0 24px;
+        width: 70px;
+        height: 70px;
+        background-image: url('../../assets/imgs/basket.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }

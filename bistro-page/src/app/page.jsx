@@ -47,8 +47,8 @@ export default function Home() {
         <h1>Browse Our Menu</h1>
 
         <div className={styles.menu}>
-          {menuArr.map(el =>
-            <div className={styles.block_menu}>
+          {menuArr.map((el,i) =>
+            <div key={i} className={styles.block_menu}>
               <div className={el.img}></div>
               <h2>{el.title}</h2>
               <p>{el.text}</p>

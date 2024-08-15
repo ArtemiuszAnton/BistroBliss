@@ -1,4 +1,6 @@
-import style from './header.module.css';
+import style from './header.module.scss';
+
+import Link from 'next/link';
 
 export default function Header() {
     return <header>
@@ -44,9 +46,8 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className={style.right_btn}>
-                Book A Table
-            </div>
+            <Link href={'/basket'}><button className={style.right_btn}><div className={style.basket_img}></div></button></Link>
+
         </div>
     </header>
 
